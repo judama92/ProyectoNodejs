@@ -1,0 +1,11 @@
+-las librerias deben estar asignadas a una constante, no a una variable.
+-un callback es una funcion que retorna un valor de forma sincronica
+-function(req,res) req es una peticion(ejem: click del usuario) y res es la salida del servidor
+-usaremos nodemon com olibreria auxiliar, sirve para refrescar los cambios
+-la != entre estos es la funcion anonima
+app.get('/api',function(req,res){
+	res.send("hola mundo");
+});
+app.get('/api',(req,res)=>{
+	res.send("hola mundo");
+});
